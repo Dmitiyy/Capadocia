@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'RobotoCondensed-Light';
+}
+
+@font-face{
+    font-family: 'balqis';
+    src: url('../fonts/balqis.woff2') format('woff2'),
+         url('../fonts/balqis.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+@font-face{
+    font-family: 'RobotoCondensed-Light';
+    src: url('../fonts/RobotoCondensed-Light.woff2') format('woff2'),
+            url('../fonts/RobotoCondensed-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: 'RobotoCondensed-LightItalic';
+    src: url('../fonts/RobotoCondensed-LightItalic.woff2') format('woff2'),
+            url('../fonts/RobotoCondensed-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: 'RobotoCondensed-Regular';
+    src: url('../fonts/RobotoCondensed-Regular.woff2') format('woff2'),
+            url('../fonts/RobotoCondensed-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+.container{
+    width: 100%;
+    height: 5000px;
+    background: transparent;
+}
+
+@import './blocks/head';
+@import './slick';
+@import './reset';
+@import './blocks/section1';
+@import './blocks/hotel';
+
+.modal{ 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(100, 98, 98, 0.616);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.img__modal{
+    width: 50%;
+}

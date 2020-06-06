@@ -1,0 +1,92 @@
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+
+    &__block__nav{
+        max-width: 1200px;
+        height: 100px;
+        background: transparent;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        %item-menu{
+            width: 500px;
+            height: 100px;
+            background: transparent;
+            display: flex;
+            align-items: center;
+        }
+        .header__menu1__nav{
+            @extend %item-menu;
+            .menu__list{
+                width: 300px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-family: 'RobotoCondensed-Regular';
+            }
+            .a__list__menu{
+                text-decoration: none;
+                color: black;
+                font-size: 20px;
+                font-family: 'RobotoCondensed-Regular';
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            .menu__list-item{
+                list-style: none;
+                font-family: 'RobotoCondensed-Regular';
+            }
+        }
+        .header__menu2__nav{
+            @extend %item-menu;
+            width: 300px;
+            display: flex;
+            justify-content: space-between;
+            justify-content: flex-end;
+            .a__list__menu{
+                text-decoration: none;
+                color: black;
+                font-size: 20px;
+                font-family: 'RobotoCondensed-Regular';
+            }
+            .menu__list-item{
+                list-style: none;
+                position: relative;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    background-image: url('../images/phone.svg');
+                    width: 30px;
+                    height: 30px;
+                    left: -40px;
+                }
+            }
+        }
+    }
+    &__obv__title{
+        width: 850px;
+        background: transparent;
+        margin: 0 auto;
+        margin-top: 250px;
+    }
+    &__title{
+        margin: 0 auto;
+        text-align: right;
+        font-size: 230px;
+        line-height: 60px;
+        font-weight: 300;
+        font-family: 'balqis';
+        span{
+            font-size: 40px;
+            text-align: left;
+            font-weight: normal;
+            font-family: 'RobotoCondensed-LightItalic';
+        }
+    }
+}
