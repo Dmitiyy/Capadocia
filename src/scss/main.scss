@@ -45,7 +45,7 @@ body{
 
 .container{
     width: 100%;
-    height: 5000px;
+    height: 6500px;
     background: transparent;
 }
 
@@ -54,6 +54,7 @@ body{
 @import './reset';
 @import './blocks/section1';
 @import './blocks/hotel';
+@import './blocks/price';
 
 .modal{ 
   position: fixed;
