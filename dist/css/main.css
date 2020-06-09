@@ -516,6 +516,85 @@ input, select {
     margin-bottom: 50px;
     margin-top: 100px; }
 
+.form {
+  width: 1200px;
+  background: transparent;
+  margin: 0 auto;
+  margin-top: 150px; }
+  .form__inner {
+    width: 100%;
+    display: flex; }
+  .form__contact {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .form__bg {
+    width: 50%; }
+  .form form {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: 200px;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 50px; }
+    .form form input {
+      width: 100%;
+      height: 50px;
+      background: transparent;
+      outline: none;
+      padding-left: 30px;
+      padding-right: 30px;
+      border: 2px solid #E2AB3F;
+      color: black;
+      font-size: 18px;
+      font-weight: 300; }
+    .form form input::placeholder {
+      color: black; }
+    .form form button {
+      width: 280px;
+      height: 50px;
+      background: transparent;
+      border: 2px solid #E2AB3F;
+      margin: 0 auto;
+      outline: none;
+      font-size: 20px;
+      cursor: pointer;
+      font-weight: 300; }
+  .form__container {
+    width: 80%;
+    background: transparent; }
+  .form__block__title {
+    width: 387px;
+    background: transparent;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end; }
+  .form__title {
+    font-family: 'balqis';
+    font-size: 100px;
+    color: #e2ab3f;
+    line-height: 30px; }
+    .form__title span {
+      color: black;
+      font-size: 24px;
+      font-family: 'RobotoCondensed-LightItalic';
+      margin-left: 130px; }
+  .form__block__contact {
+    width: 100%;
+    background: transparent; }
+  .form__p__title {
+    text-align: center;
+    padding-top: 100px;
+    font-size: 20px;
+    font-weight: bold; }
+
 .modal {
   position: fixed;
   width: 100%;
