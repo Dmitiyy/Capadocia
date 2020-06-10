@@ -1,0 +1,59 @@
+.footer{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    margin-top: 160px;
+    &__inner{
+        width: 1200px;
+        height: 500px;
+        background: transparent;
+        margin: 0 auto;
+        padding-top: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__ballon{
+        width: 30%;
+        height: 500px;
+        background-image: url('../images/ballon-white.png');
+        background-repeat: no-repeat;
+    }
+    &__text{
+        width: 58%;
+        height: 500px;
+        background: transparent;
+        display: flex;
+        align-items: center;
+    }
+    @mixin title() {
+        font-family: 'balqis';
+        font-size: 100px;
+    }
+    &__title{
+        color: rgb(226, 171, 63);
+        @include title();
+        text-align: center;
+        padding-top: 100px;
+        margin-bottom: 30px;
+    }
+    &__p{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    &__icons{
+        width: 100px;
+        margin: 0 auto;
+        margin-top: 38px;
+    }
+    &__img__icon{
+        cursor: pointer;
+    }
+    &__title__black{
+        @include title();
+        color: black;
+        text-align: center;
+    }
+}
